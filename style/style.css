@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cubic_11", "Helvetica", "Noto Sans CJK TC", PingFang, STHeiti, sans-serif, serif;
+}
+
+@font-face {
+  font-family: "Cubic_11";
+  src: url(../fonts/Cubic_11_1.013_R.ttf);
+}
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas-wrap #myCanvas {
+  background-color: black;
+  border: 5px solid lightgreen;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-wrap {
+  position: absolute;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-wrap #myScore,
+.info-wrap #myScore2 {
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+}
+.info-wrap #Start {
+  padding: 0.25rem;
+  background-color: yellow;
+  font-size: 1rem;
+  display: block;
+  margin-top: 10px;
+}
+
+@media (max-width: 1100px) {
+  #myCanvas {
+    width: 70%;
+    height: auto;
+  }
+  .info-wrap {
+    top: 15%;
+  }
+}/*# sourceMappingURL=style.css.map */
